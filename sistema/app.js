@@ -6,7 +6,7 @@ const Autor = require('./Autor');
 const app = express();
 const PORT = 3000;
 
-mongoose.connect('mongodb://localhost:27017/seubanco', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://localhost:27017/pcssgbd', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(bodyParser.json());
 
