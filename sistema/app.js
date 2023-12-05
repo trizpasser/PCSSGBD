@@ -252,3 +252,8 @@ app.post('/livro/:livroId/categoria/:categoriaId', async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+
+// Iniciar o servidor
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
